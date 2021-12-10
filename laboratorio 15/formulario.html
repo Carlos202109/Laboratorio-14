@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h1>Travel Authorization From </h1>
+    <h2>Seccion A: Informacion del cliente</h2>
+    <hr>
+    <form>
+        <label for="icargo">Cargo :</label><br>
+        <input id= "icargo" type="text"pattern="[A-Z]{4,100}" required><br>
+        <label for="inombre">Nombre :</label><br>
+        <input id="inombre" type="text" pattern="[A-Z]{4,100}" required ><br>
+        <label for="ipri_apellido">Primer apellido :</label><br>
+        <input id = "ipri_apellido" type="text"pattern="[A-Z]{4,100}" required><br>
+        <label for="isegu_apellido">Segundo apellido :</label><br>
+        <input id="isegu_apellido" type="text"pattern="[A-Z]{4,100}" required><br>
+        <label for="icorreo">Correo electronico :</label><br>
+        <input id="icorreo" type="email"><br>
+        <label for="itelefono">Numero de telefono :</label><br>
+        <input id="itelefono" type="text"pattern="[0-9]{9}"><br>
+       
+
+    </form>
+    <h2>Seccion B: Informacion del viaje</h2>
+    <hr>
+    <form>
+        <label for="iaero">Nombre de la aerolinea: </label>
+        <select name="" id="iaero">
+            <optgroup label = "Elija aerolinea">
+            <option value="">Latam Airlines Perú</option>
+            <option value="">Star Perú</option>
+            <option value="">Avianca Perú</option>
+            <option value="">Viva Air Perú</option>
+        </optgroup>
+        </select><br>
+        <label for="">Destino: </label>
+        <input type="text"><br>
+        <label for="">Fecha de salida:  </label>
+        <input type="date" min="2018-01-01"><br>
+        <label for="">Fecha de regreso: </label>
+        <input type="date"min="2018-01-01"><br>
+        <label for="">Coste estimado:    </label>
+        <input type="number" min="100" max="1000"><br>
+        <label for="">¿Incluye la vista al cliente? </label>
+        <input type="checkbox">
+        <h3>Gastos adicionales estimados</h3>
+        <label for="">Alquiler del coche: </label>
+        <input type="number"min="100"max="600"><br>
+        <label for="">Hotel: </label>
+        <input type="text"><br>
+        <label for="">Comida</label>
+        <input type="number"><br>
+        <label for="">Total estimado</label>
+        <input type="number"><br>
+       <h3>Metodo de pago utilizado:</h3>
+        <input type="radio"name="pago">
+        <label for="">Metalico</label><br>
+        <input type="radio"name="pago">
+        <label for="">Tarjeta de credito</label><br>
+        <input type="radio"name="pago">
+        <label for="">Cheque</label><br>
+        <h3>Proposito del viaje</h3>
+      <textarea name="" id="" cols="30" rows="10"></textarea><br>
+        <button type="submit" >Enviar</button>
+    </form>
+</body>
+</html>
